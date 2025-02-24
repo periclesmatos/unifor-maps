@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa com Google Maps API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHaqB0Vaa7e5yH3yn8I0MPhKeOOpHpdi0&libraries=marker" async defer></script>
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>MAPA UNIFOR</h1>
+    </header>
+    <main>
+      <div id="container__mapa_forms">
+        <section id="map"></section>
+        <aside id="container__form_marcador">
+          <h2>Adicionar Marcador</h2>
+          <label for="latitude">Latitude:</label>
+          <input type="number" id="latitude" placeholder="Latitude" />
+
+          <label for="longitude">Longitude:</label>
+          <input type="number" id="longitude" placeholder="Longitude" />
+
+          <label for="titulo">Nome do Marcador:</label>
+          <input type="text" id="titulo" placeholder="Título do marcador" />
+
+          <label for="descricao">Descrição:</label>
+          <input
+            type="text"
+            id="descricao"
+            placeholder="Descrição do marcador"
+          />
+
+          <button type="button" id="adicionarMarcadorButton">
+            Adicionar Marcador
+          </button>
+        </aside>
+      </div>
+
+      <section id="lista-marcadores">
+        <h2>Marcadores</h2>
+        <ul id="container__lista_marcadores"></ul>
+      </section>
+    </main>
+  </body>
+</html>
